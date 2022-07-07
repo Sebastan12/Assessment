@@ -34,7 +34,7 @@ $ npm install
 $ docker-compose up -d
 
 #setting up .env file
-create .env file / or copie .env.example
+create .env file / or copy .env.example
 paste -> DATABASE_URL="postgresql://user:admin@localhost:5432/nest?schema=public" <- into it (docker credentials)
 see .env.example for referance
 
@@ -53,6 +53,7 @@ $ default email: admin
 ## Endpoints
 
 ```bash
+GET
 # /folders
 - lists all files/folders with the following information:
   - path
@@ -62,6 +63,7 @@ $ default email: admin
   - modificationdate
   - scandate
 
+GET
 # /folders/filesize?ftype=xxx
   - Delivers folders and subfolders with aggregated filesize sorted by size
   - Filtered by filetype/extension=xxx if avail
