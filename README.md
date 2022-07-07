@@ -7,7 +7,7 @@
 
 ## Description
 
-This REST API periodically scans the folder "FolderToWatch" and records all files + Metadata inside a Postgres DB
+This REST API periodically scans the folder "FolderToWatch" and records all files + Metadata inside a Postgres DB.
 To see which endpoints are available continue reading in the Endpoint section further down below.
 
 ## Quickstart
