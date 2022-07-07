@@ -18,6 +18,7 @@ To quickly get up and running:
 $ npm install
 $ npm run start:dev
 ```
+- Wait 1-2 minutes for the scheduler to get the contents of "folderToWatch" / do first scan
 - The API Should then be available at http://localhost:3000/folders
 
 ## Installation
@@ -33,7 +34,7 @@ $ npm install
 $ docker-compose up -d
 
 #setting up .env file
-create .env file
+create .env file / or copie .env.example
 paste -> DATABASE_URL="postgresql://user:admin@localhost:5432/nest?schema=public" <- into it (docker credentials)
 see .env.example for referance
 
