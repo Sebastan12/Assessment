@@ -15,6 +15,7 @@ To quickly get up and running:
 - read the "Starting the DB" section 
 - after setting up the db run
 ```bash
+$ npm install
 $ npm run start:dev
 ```
 - The API Should then be available at http://localhost:3000/folders
