@@ -9,3 +9,13 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model File {
+  id Int @id @default(autoincrement())
+  scandate DateTime @default(now())
+  modificationdate DateTime
+  path String
+  filename String
+  filetype String
+  filesize Int
+}
