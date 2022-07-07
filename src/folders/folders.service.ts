@@ -13,7 +13,13 @@ export class FoldersService {
   constructor(private prisma: PrismaService) {}
 
   async getAllFiles() {
-    const allFiles = await this.prisma.file.findMany({});
+    const allFiles = await this.prisma.file.findMany({
+      orderBy: [
+        {
+          filename: 'asc',
+        },
+      ],
+    });
     return { files: allFiles };
   }
 
